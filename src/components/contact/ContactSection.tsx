@@ -222,7 +222,7 @@ export default function ContactSection() {
           <MagneticButton href="mailto:ujjwalkumar16895@gmail.com" label="Email">
             <Mail className="w-7 h-7" />
           </MagneticButton>
-          <MagneticButton href="/Specialized CV.pdf" label="Resume" download="Ujjwal_Kumar_CV.pdf">
+          <MagneticButton href="/General CV (2).pdf" label="Resume" download="Ujjwal_Kumar_CV.pdf">
             <FileDown className="w-7 h-7" />
           </MagneticButton>
         </div>
