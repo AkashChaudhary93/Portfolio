@@ -11,7 +11,7 @@ const STATUS_LINES = [
 ];
 
 const MARQUEE_TEXT =
-  'GAME DEVELOPER • ML ENGINEER • BACKEND ARCHITECT • WORLD BUILDER • SYSTEM DESIGNER • CODE WARRIOR • ';
+  'FULL-STACK DEVELOPER • CLOUD ENGINEER • PROBLEM SOLVER • DSA WARRIOR • BACKEND ARCHITECT • REACT CRAFTSMAN • ';
 
 export default function Preloader() {
   const { isLoading, setLoading } = useLoadingStore();
@@ -103,7 +103,7 @@ export default function Preloader() {
           background: 'linear-gradient(135deg, var(--accent-cyan), var(--accent-purple))',
         }}
       >
-        <span className="font-space-grotesk text-xl font-bold text-bg-primary">UK</span>
+        <span className="font-space-grotesk text-xl font-bold text-bg-primary">AC</span>
       </div>
 
       {/* Progress Bar */}
@@ -197,7 +197,7 @@ export default function Preloader() {
       {/* Bottom Info */}
       <div className="absolute bottom-8 left-0 right-0 flex justify-between px-8 md:px-16">
         <span className="font-jetbrains-mono text-xs text-text-tertiary">[v1.0.0]</span>
-        <span className="font-jetbrains-mono text-xs text-text-tertiary">[PATNA, BIHAR]</span>
+        <span className="font-jetbrains-mono text-xs text-text-tertiary">[PUNJAB, INDIA]</span>
         <span className="font-jetbrains-mono text-xs text-text-tertiary">[2025]</span>
       </div>
 
