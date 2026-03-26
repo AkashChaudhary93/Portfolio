@@ -20,7 +20,7 @@ export const projects: Project[] = [
     accent: 'var(--accent-cyan)',
     image: '/SUmo Cars Thumbnail.png',
     video: '/SumoCars.mp4',
-    github: 'https://github.com/UJJWAL16895/',
+    github: 'https://github.com/AkashChaudhary93',
     featured: true,
   },
   {
@@ -141,7 +141,7 @@ export const projects: Project[] = [
     accent: 'var(--accent-purple)',
     image: '/Solid Waste thumbnail.png',
     video: '/SolidWaste.mp4',
-    github: 'https://github.com/UJJWAL16895/route-optimization',
+    github: 'https://github.com/AkashChaudhary93/route-optimization',
     featured: true,
   },
 ];

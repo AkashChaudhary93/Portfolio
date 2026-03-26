@@ -22,32 +22,35 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ujjwal Kumar | Game Developer • ML Engineer • Backend Architect",
+  title: "Akash Chaudhary | Full-Stack Developer • Cloud Engineer • Problem Solver",
   description:
-    "Portfolio of Ujjwal Kumar — Building multiplayer game worlds in Unity, training ML models for real-world impact, and engineering scalable backend systems. B.Tech CSE student at LPU, Software Engineer Intern at Eduniketan.",
+    "Portfolio of Akash Chaudhary — Building full-stack web applications with React & Spring Boot, architecting cloud infrastructure on AWS, and solving 250+ DSA problems. B.Tech CSE student at Lovely Professional University, Punjab.",
   keywords: [
-    "Ujjwal Kumar",
-    "Game Developer",
-    "ML Engineer",
-    "Backend Architect",
-    "Unity Developer",
+    "Akash Chaudhary",
+    "Full-Stack Developer",
+    "Cloud Engineer",
+    "React Developer",
+    "Spring Boot",
+    "AWS",
+    "DSA",
+    "LPU",
     "Portfolio",
   ],
-  authors: [{ name: "Ujjwal Kumar" }],
+  authors: [{ name: "Akash Chaudhary" }],
   openGraph: {
-    title: "Ujjwal Kumar | Game Developer • ML Engineer • Backend Architect",
+    title: "Akash Chaudhary | Full-Stack Developer • Cloud Engineer • Problem Solver",
     description:
-      "Building multiplayer game worlds in Unity, training ML models for real-world impact, and engineering scalable backend systems.",
-    url: "https://ujjwalkumar.dev",
-    siteName: "Ujjwal Kumar Portfolio",
+      "Building full-stack web applications with React & Spring Boot, architecting serverless cloud solutions on AWS, and solving 250+ DSA problems.",
+    url: "https://akashchaudhary.dev",
+    siteName: "Akash Chaudhary Portfolio",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ujjwal Kumar | Game Developer • ML Engineer • Backend Architect",
+    title: "Akash Chaudhary | Full-Stack Developer • Cloud Engineer • Problem Solver",
     description:
-      "Building multiplayer game worlds in Unity, training ML models for real-world impact, and engineering scalable backend systems.",
+      "Building full-stack web applications with React & Spring Boot, architecting serverless cloud solutions on AWS, and solving 250+ DSA problems.",
   },
   other: {
     "theme-color": "#0A0A0F",

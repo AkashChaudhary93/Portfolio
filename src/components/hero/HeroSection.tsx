@@ -76,10 +76,10 @@ export default function HeroSection() {
               onMouseLeave={() => setCursorState('DEFAULT')}
             >
               <span className="gradient-text-animate block">
-                UJJWAL
+                AKASH
               </span>
               <span className="gradient-text-animate block" style={{ animationDelay: '1s' }}>
-                KUMAR
+                CHAUDHARY
               </span>
             </h1>
           </div>
@@ -91,8 +91,8 @@ export default function HeroSection() {
 
           {/* Intro */}
           <p className="text-body text-text-secondary max-w-lg">
-            Building multiplayer worlds, training intelligent systems, and engineering scalable
-            backends from Patna to the cloud.
+            Building full-stack systems, deploying cloud infrastructure, and solving 250+ DSA
+            problems from Punjab to the cloud.
           </p>
 
           {/* CTA Buttons */}
@@ -100,7 +100,7 @@ export default function HeroSection() {
             <GradientButton href="#work" variant="primary">
               VIEW MY WORK ↓
             </GradientButton>
-            <GradientButton href="/General CV (2).pdf" variant="secondary" download="Ujjwal_Kumar_CV.pdf">
+            <GradientButton href="/Akash_Chaudhary_Resume.pdf" variant="secondary" download="Akash_Chaudhary_Resume.pdf">
               DOWNLOAD CV ↗
             </GradientButton>
           </div>

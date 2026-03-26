@@ -5,7 +5,7 @@ import { useCursorStore } from '@/store/cursorStore';
 import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
 
 const MARQUEE_TEXT =
-  'GAME DEVELOPER • ML ENGINEER • BACKEND ARCHITECT • WORLD BUILDER • SYSTEM DESIGNER • CODE WARRIOR • ';
+  'FULL-STACK DEVELOPER • CLOUD ENGINEER • PROBLEM SOLVER • DSA WARRIOR • BACKEND ARCHITECT • REACT CRAFTSMAN • ';
 
 export default function Footer() {
   const { setCursorState } = useCursorStore();
@@ -60,11 +60,11 @@ export default function Footer() {
                 background: 'linear-gradient(135deg, var(--accent-cyan), var(--accent-purple))',
               }}
             >
-              UK
+              AC
             </div>
             <div>
               <p className="font-space-grotesk text-sm font-semibold text-text-primary">
-                UJJWAL KUMAR
+                AKASH CHAUDHARY
               </p>
               <p className="font-jetbrains-mono text-xs text-text-tertiary">
                 © 2025 All Rights Reserved.
@@ -80,14 +80,14 @@ export default function Footer() {
           {/* Right — Social + Back to top */}
           <div className="flex items-center gap-4">
             {[
-              { icon: <Github className="w-4 h-4" />, href: 'https://github.com/UJJWAL16895/' },
+              { icon: <Github className="w-4 h-4" />, href: 'https://github.com/AkashChaudhary93' },
               {
                 icon: <Linkedin className="w-4 h-4" />,
-                href: 'https://www.linkedin.com/in/ujjwal-kumar-6c18/',
+                href: 'https://linkedin.com/in/akashchaudhary93',
               },
               {
                 icon: <Mail className="w-4 h-4" />,
-                href: 'mailto:ujjwalkumar16895@gmail.com',
+                href: 'mailto:akashchoudhary9368@gmail.com',
               },
             ].map((item) => (
               <a

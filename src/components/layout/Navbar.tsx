@@ -102,10 +102,10 @@ export default function Navbar() {
               className="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold font-space-grotesk text-bg-primary"
               style={{ background: 'linear-gradient(135deg, var(--accent-cyan), var(--accent-purple))' }}
             >
-              UK
+              AC
             </div>
             <span className="hidden sm:block font-space-grotesk text-sm font-semibold tracking-[0.1em] uppercase text-text-primary">
-              UJJWAL KUMAR
+              AKASH CHAUDHARY
             </span>
           </div>
 

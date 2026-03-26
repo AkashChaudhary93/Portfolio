@@ -37,7 +37,7 @@ export const NAV_LINKS = [
 ] as const;
 
 export const SOCIAL_LINKS = {
-  github: 'https://github.com/UJJWAL16895/',
-  linkedin: 'https://www.linkedin.com/in/ujjwal-kumar-6c18/',
-  email: 'ujjwalkumar16895@gmail.com',
+  github: 'https://github.com/AkashChaudhary93',
+  linkedin: 'https://linkedin.com/in/akashchaudhary93',
+  email: 'akashchoudhary9368@gmail.com',
 } as const;

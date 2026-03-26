@@ -53,27 +53,27 @@ function StatsCounter({ value, label }: { value: number; label: string }) {
 
 const DO_CARDS = [
   {
-    icon: '🎮',
-    title: 'Game Development',
+    icon: '🖥️',
+    title: 'Full-Stack Development',
     description:
-      'Multiplayer worlds with real physics, cross-platform combat arenas, and addictive arcade mechanics built in Unity.',
-    tech: ['Unity', 'C#', 'Blender', 'Multiplayer'],
+      'End-to-end web applications with React frontends, Spring Boot backends, and PostgreSQL databases — from concept to deployment.',
+    tech: ['React', 'Spring Boot', 'PostgreSQL', 'Docker'],
     accent: 'var(--accent-cyan)',
   },
   {
-    icon: '🧠',
-    title: 'Machine Learning & NLP',
+    icon: '☁️',
+    title: 'Cloud & DevOps',
     description:
-      'From route optimization with K-Means to multilingual sentiment analysis across 22 Indian languages using Transformers.',
-    tech: ['Python', 'Scikit-Learn', 'Hugging Face', 'Pandas'],
+      'Serverless architectures on AWS using Lambda, API Gateway, and DynamoDB following the Well-Architected Framework.',
+    tech: ['AWS', 'Docker', 'Linux', 'Git'],
     accent: 'var(--accent-purple)',
   },
   {
-    icon: '⚙️',
-    title: 'Backend Engineering',
+    icon: '⚡',
+    title: 'Problem Solving & DSA',
     description:
-      'Scalable REST APIs, role-based auth, real-time databases, and performance-optimized architectures for ed-tech platforms.',
-    tech: ['Node.js', 'PostgreSQL', 'Firebase', 'JWT'],
+      'Solved 250+ problems across LeetCode and GeeksforGeeks, with strong command over data structures and algorithms in C++ and Java.',
+    tech: ['C++', 'Java', 'LeetCode', 'GeeksforGeeks'],
     accent: 'var(--accent-green)',
   },
 ];
@@ -119,8 +119,8 @@ export default function AboutSection() {
               {/* Actual Photo */}
               <div className="absolute inset-0">
                 <Image
-                  src="/UJJWAL.png"
-                  alt="Ujjwal Kumar"
+                  src="/AKASH.png"
+                  alt="Akash Chaudhary"
                   fill
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out group-hover:scale-110"
                   sizes="(max-width: 400px) 100vw, 400px"
@@ -138,7 +138,7 @@ export default function AboutSection() {
               </div>
             </div>
             <p className="font-jetbrains-mono text-xs text-text-tertiary mt-3 text-center">
-              UJJWAL KUMAR — PATNA, BIHAR
+              AKASH CHAUDHARY — PUNJAB, INDIA
             </p>
           </div>
 
@@ -148,34 +148,32 @@ export default function AboutSection() {
               }`}
           >
             <p className="text-body-lg text-text-primary leading-relaxed">
-              I&apos;m <span className="text-accent-cyan font-semibold">Ujjwal Kumar</span>, a
+              I&apos;m <span className="text-accent-cyan font-semibold">Akash Chaudhary</span>, a
               B.Tech Computer Science student at{' '}
               <span className="text-accent-purple font-semibold">Lovely Professional University</span>{' '}
-              with a passion that spans three powerful domains. I build immersive multiplayer games
-              in Unity where physics feels real and competition is fierce. I train machine learning
-              models that optimize real-world systems — from waste collection routes to financial
-              sentiment analysis across 22 Indian languages. And I engineer robust backend systems
-              that power educational platforms serving hundreds of students.
+              with a CGPA of 8.09, passionate about building systems that scale. I craft full-stack
+              web applications with React and Spring Boot, architect cloud infrastructure on AWS,
+              and continuously sharpen my problem-solving skills — having solved 250+ DSA problems
+              across LeetCode and GeeksforGeeks.
             </p>
 
             <p className="text-body text-text-secondary">
-              Currently, I&apos;m working as a{' '}
-              <span className="text-accent-green font-semibold">Software Engineer Intern</span> at
-              Eduniketan, where I&apos;m building &apos;TheEducode&apos; — a comprehensive learning
-              platform with secure exams, interactive coding challenges, and a complete C
-              programming curriculum.
+              I&apos;ve received hands-on training in{' '}
+              <span className="text-accent-green font-semibold">AWS Cloud Computing</span> at
+              Gokboru Tech and Java Development at TechnoHacks EduTech, building serverless
+              applications and full-stack CRUD systems along the way.
             </p>
 
             <p className="text-body text-text-secondary">
-              When I&apos;m not coding, I&apos;m probably designing game mechanics, exploring NLP
-              papers, or architecting database schemas for my ed-tech startup.
+              When I&apos;m not coding, I&apos;m probably grinding competitive programming,
+              exploring new cloud services, or designing scalable architectures for my next project.
             </p>
 
             {/* Stats */}
             <div className="flex gap-12 pt-6">
-              <StatsCounter value={4} label="PROJECTS SHIPPED" />
-              <StatsCounter value={3} label="DOMAINS MASTERED" />
-              <StatsCounter value={1} label="STARTUP BUILDING" />
+              <StatsCounter value={250} label="DSA PROBLEMS SOLVED" />
+              <StatsCounter value={4} label="PROJECTS BUILT" />
+              <StatsCounter value={8} label="CGPA / 10" />
             </div>
           </div>
         </div>

@@ -81,7 +81,7 @@ function ContactInfo() {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText('ujjwalkumar16895@gmail.com');
+    navigator.clipboard.writeText('akashchoudhary9368@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -105,7 +105,7 @@ function ContactInfo() {
         <div>
           <p className="font-jetbrains-mono text-xs text-text-tertiary uppercase">EMAIL</p>
           <p className="font-inter text-sm text-text-primary group-hover:text-accent-cyan transition-colors">
-            ujjwalkumar16895@gmail.com
+            akashchoudhary9368@gmail.com
           </p>
         </div>
       </div>
@@ -114,7 +114,7 @@ function ContactInfo() {
         <Phone className="w-5 h-5 text-accent-purple" />
         <div>
           <p className="font-jetbrains-mono text-xs text-text-tertiary uppercase">PHONE</p>
-          <p className="font-inter text-sm text-text-primary">+91 6203140535</p>
+          <p className="font-inter text-sm text-text-primary">+91-XXXXXXXXXX</p>
         </div>
       </div>
 
@@ -122,7 +122,7 @@ function ContactInfo() {
         <MapPin className="w-5 h-5 text-accent-magenta" />
         <div>
           <p className="font-jetbrains-mono text-xs text-text-tertiary uppercase">LOCATION</p>
-          <p className="font-inter text-sm text-text-primary">Patna, Bihar, India</p>
+          <p className="font-inter text-sm text-text-primary">Punjab, India (LPU Campus)</p>
         </div>
       </div>
     </div>
@@ -201,7 +201,7 @@ export default function ContactSection() {
             TOGETHER.
           </h2>
           <p className="text-body text-text-secondary mt-6 max-w-lg">
-            Have a project in mind? Want to collaborate on a game, an ML model, or a platform?
+            Have a project in mind? Want to collaborate on a web app, a cloud solution, or a DSA challenge?
             Let&apos;s talk.
           </p>
         </div>
@@ -213,16 +213,16 @@ export default function ContactSection() {
 
         {/* Social Links */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-xl mx-auto">
-          <MagneticButton href="https://github.com/UJJWAL16895/" label="GitHub">
+          <MagneticButton href="https://github.com/AkashChaudhary93" label="GitHub">
             <Github className="w-7 h-7" />
           </MagneticButton>
-          <MagneticButton href="https://www.linkedin.com/in/ujjwal-kumar-6c18/" label="LinkedIn">
+          <MagneticButton href="https://linkedin.com/in/akashchaudhary93" label="LinkedIn">
             <Linkedin className="w-7 h-7" />
           </MagneticButton>
-          <MagneticButton href="mailto:ujjwalkumar16895@gmail.com" label="Email">
+          <MagneticButton href="mailto:akashchoudhary9368@gmail.com" label="Email">
             <Mail className="w-7 h-7" />
           </MagneticButton>
-          <MagneticButton href="/General CV (2).pdf" label="Resume" download="Ujjwal_Kumar_CV.pdf">
+          <MagneticButton href="/Akash_Chaudhary_Resume.pdf" label="Resume" download="Akash_Chaudhary_Resume.pdf">
             <FileDown className="w-7 h-7" />
           </MagneticButton>
         </div>
