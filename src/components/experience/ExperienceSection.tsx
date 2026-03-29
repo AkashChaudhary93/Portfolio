@@ -27,7 +27,7 @@ const timelineData: TimelineItem[] = [
     id: 'java-training',
     year: 'Apr 2024',
     title: 'Java Development Training',
-    organization: 'TechnoHacks EduTech',
+    organization: 'Lovely Professional University',
     description:
       'Gained hands-on experience building dynamic web applications with Java Servlets, JDBC, and JSP. Implemented robust database connectivity and dynamic CRUD operations with focus on server-client communication.',
     tech: ['Java', 'Servlets', 'JDBC', 'JSP', 'MySQL'],

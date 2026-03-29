@@ -126,7 +126,7 @@ export default function AboutSection() {
             <p className="text-body text-text-secondary">
               I&apos;ve received hands-on training in{' '}
               <span className="text-accent-green font-semibold">AWS Cloud Computing</span> at
-              Gokboru Tech and Java Development at TechnoHacks EduTech, building serverless
+              Gokboru Tech and Java Development at Lovely Professional University, building serverless
               applications and full-stack CRUD systems along the way.
             </p>
 
