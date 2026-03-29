@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { SectionHeader, GlassCard, TechPill } from '@/components/shared';
 
-function StatsCounter({ value, label }: { value: number; label: string }) {
+function StatsCounter({ value, label, isDecimal = false, showPlus = true }: { value: number; label: string; isDecimal?: boolean; showPlus?: boolean }) {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
   const hasAnimated = useRef(false);
@@ -24,7 +24,12 @@ function StatsCounter({ value, label }: { value: number; label: string }) {
             const elapsed = Date.now() - start;
             const progress = Math.min(elapsed / duration, 1);
             const eased = 1 - Math.pow(1 - progress, 3);
-            setCount(Math.floor(eased * value));
+            
+            if (isDecimal) {
+              setCount(Number((eased * value).toFixed(2)));
+            } else {
+              setCount(Math.floor(eased * value));
+            }
 
             if (progress < 1) requestAnimationFrame(animate);
           };
@@ -37,12 +42,12 @@ function StatsCounter({ value, label }: { value: number; label: string }) {
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [value]);
+  }, [value, isDecimal]);
 
   return (
     <div ref={ref} className="text-center">
       <div className="font-space-grotesk text-4xl font-bold text-accent-cyan">
-        {count}+
+        {count}{showPlus && '+'}
       </div>
       <div className="font-jetbrains-mono text-xs text-text-tertiary uppercase tracking-wider mt-1">
         {label}
@@ -102,56 +107,17 @@ export default function AboutSection() {
       <div className="container-custom">
         <SectionHeader number="01" title="ABOUT ME" />
 
-        <div className="grid lg:grid-cols-[400px_1fr] gap-12 items-start mb-20">
-          {/* Photo */}
-          <div
-            className={`relative group transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-32'
-              }`}
-          >
-            {/* Stylized frame for portrait */}
-            <div className="relative w-full aspect-[4/5] bg-bg-tertiary border-2 border-[var(--border-subtle)] overflow-hidden">
-              {/* Corner brackets */}
-              <div className="absolute top-2 left-2 w-6 h-6 border-l-2 border-t-2 border-accent-cyan opacity-50 z-10" />
-              <div className="absolute top-2 right-2 w-6 h-6 border-r-2 border-t-2 border-accent-cyan opacity-50 z-10" />
-              <div className="absolute bottom-2 left-2 w-6 h-6 border-l-2 border-b-2 border-accent-cyan opacity-50 z-10" />
-              <div className="absolute bottom-2 right-2 w-6 h-6 border-r-2 border-b-2 border-accent-cyan opacity-50 z-10" />
-
-              {/* Actual Photo */}
-              <div className="absolute inset-0">
-                <Image
-                  src="/AKASH.png"
-                  alt="Akash Chaudhary"
-                  fill
-                  className="object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out group-hover:scale-110"
-                  sizes="(max-width: 400px) 100vw, 400px"
-                  priority
-                />
-              </div>
-
-              {/* Gradient overlay bottom */}
-              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-bg-primary/80 to-transparent z-10" />
-
-              {/* Glitch effect on hover */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mix-blend-screen pointer-events-none">
-                <div className="absolute inset-0 bg-accent-cyan/10 translate-x-0.5" />
-                <div className="absolute inset-0 bg-accent-magenta/10 -translate-x-0.5" />
-              </div>
-            </div>
-            <p className="font-jetbrains-mono text-xs text-text-tertiary mt-3 text-center">
-              AKASH CHAUDHARY — PUNJAB, INDIA
-            </p>
-          </div>
-
+        <div className="max-w-3xl mx-auto mb-20 text-center">
           {/* Bio */}
           <div
-            className={`space-y-6 transition-all duration-1000 ease-out delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-32'
+            className={`space-y-8 transition-all duration-1000 ease-out delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
               }`}
           >
             <p className="text-body-lg text-text-primary leading-relaxed">
               I&apos;m <span className="text-accent-cyan font-semibold">Akash Chaudhary</span>, a
               B.Tech Computer Science student at{' '}
               <span className="text-accent-purple font-semibold">Lovely Professional University</span>{' '}
-              with a CGPA of 8.09, passionate about building systems that scale. I craft full-stack
+              with a CGPA of 8.39, passionate about building systems that scale. I craft full-stack
               web applications with React and Spring Boot, architect cloud infrastructure on AWS,
               and continuously sharpen my problem-solving skills — having solved 250+ DSA problems
               across LeetCode and GeeksforGeeks.
@@ -170,10 +136,10 @@ export default function AboutSection() {
             </p>
 
             {/* Stats */}
-            <div className="flex gap-12 pt-6">
+            <div className="flex justify-center gap-12 pt-6">
               <StatsCounter value={250} label="DSA PROBLEMS SOLVED" />
               <StatsCounter value={4} label="PROJECTS BUILT" />
-              <StatsCounter value={8} label="CGPA / 10" />
+              <StatsCounter value={8.39} label="CGPA / 10" isDecimal showPlus={false} />
             </div>
           </div>
         </div>

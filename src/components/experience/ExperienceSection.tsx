@@ -39,7 +39,7 @@ const timelineData: TimelineItem[] = [
     year: 'Aug 2023 — Present',
     title: 'B.Tech Computer Science & Engineering',
     organization: 'Lovely Professional University',
-    description: 'Pursuing B.Tech CSE in Punjab, India with a CGPA of 8.09. Core focus on Data Structures, Algorithms, Cloud Computing, and DevOps systems. Solved 250+ DSA problems across LeetCode and GeeksforGeeks.',
+    description: 'Pursuing B.Tech CSE in Punjab, India with a CGPA of 8.39. Core focus on Data Structures, Algorithms, Cloud Computing, and DevOps systems. Solved 250+ DSA problems across LeetCode and GeeksforGeeks.',
     tech: ['DSA', 'Cloud Computing', 'DevOps', 'React', 'Spring Boot'],
     accent: 'var(--accent-cyan)',
     type: 'education',
